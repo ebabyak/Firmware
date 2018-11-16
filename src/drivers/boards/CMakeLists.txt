@@ -31,9 +31,9 @@
 #
 ############################################################################
 
-if (BOARD)
+if (PX4_BOARD)
 	add_subdirectory(common)
-	add_subdirectory(${BOARD})
+	add_subdirectory(${PX4_BOARD})
 else()
 	message(FATAL_ERROR "BOARD not defined")
 endif()
